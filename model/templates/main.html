@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>University Admission</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" href="{{ url_for('static',filename='main.css') }}">
+        
+    </head>
+    <body>
+       <h1>Predict the most favourable crop</h1>
+       <div class="login-box">
+       <form action="{{ url_for('result')}}" onsubmit=" return validate()" name="form" method="post" >
+        <div class="user-box">
+    	<input type="nitrogen" name="nitrogen"  required/>
+        <label for="nitrogen">Enter nitrogen: </label>
+        </div>
+        <div class="user-box">
+            <input type="phosphorous" name="phosphorous"  required/>
+            <label for="phosphorous">Enter phosphorous value: </label>
+            </div>
+        <div class="user-box">
+            <input type="potassium" name="potassium"  required/>
+            <label for="potassium">Enter potassium: </label>
+        </div>    
+        <div class="user-box">
+            <input type="temperature" name="temperature"  required/>
+            <label for="temperature">Enter temperature: </label>
+        </div>
+
+        <div class="user-box">
+
+            <input type="humidity" name="humidity"  required />
+        <label for="humidity">Enter humidity: </label>
+		
+        </div>
+
+        <div class="user-box">
+            <input type="ph" name="ph"  required />
+        <label for="ph">Enter ph: </label>
+       
+        </div>
+
+        <div class="user-box">
+       
+        <input type="rainfall" name="rainfall"  required/>
+        <label for="rainfall">Enter rainfall: </label>
+        </div>
+
+        <div class="user-box">
+        <label>
+            <section>{% if check %}
+                {{prediction_text}}
+                {% endif %}</section>
+        
+    </label>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+        <button type="reset" class="btn btn-primary btn-block btn-large">Reset</button>
+    </form>
+
+        <form action="{{ url_for('home')}}" method="get">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Go back</button>
+
+        </form>
+        
+       </div>
+        <br>
+        <br>
+        
+
+        <script>
+            function validate(){
+                let from = document.forms["form"];
+                a = Number.isInteger(parseInt(from['nitrogen'].value));
+                b = Number.isInteger(parseInt(from['phosphorous'].value));
+                c = Number.isInteger(parseInt(from['potassium'].value));
+                d = Number.isInteger(parseInt(from['temperature'].value));
+                e = Number.isInteger(parseInt(from['humidity'].value));
+                f = Number.isInteger(parseInt(from['ph'].value));
+                g = Number.isInteger(parseInt(from['rainfall'].value));
+                if(!a || !b || !c || !d || !e || !f|| !g){
+                    
+                    alert("sorry!! wrong input type!");
+                    return false;
+                }    
+            }
+        </script>
+    </body>
+</html>

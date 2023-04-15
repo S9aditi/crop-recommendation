@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> CROP RECOMMENDATION </title>
+        <!--CSS-->
+        <link rel ="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    </head>
+    <body>
+        <!-- nav bar-->
+        <nav class="navbar">
+            <h1>CROP ADVISOR  </h1>
+            <ul class="nav-links">
+                <div class="logo">
+                    <img src= "{{url_for('static', filename='img/wheat-07.jpg')}}" >
+                </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="{{ url_for('login') }}">prediction</a></li>
+            <li><a href="#crops and Production">Crops and Production</a></li>
+            <li class="ctn"><a href="#help and Support">Help and Support</a></li>
+        </ul>
+        <div class="rightnav">  
+            <input type="text" name="search" id="search">
+            <button class="btn">search</button>
+        </div>
+        </nav>
+        <header>
+            <div class="header-content">
+                <br>
+                <h2>Crop Recommendation for Farmers made easy
+                </h2>
+                <p class="text-big">The Agricultural Advancement</p>
+                    <p class="text-small">In the present scenario of advancement, the agricultural techniques have been 
+                        modified.The machine learning models are trained to give the predictions and recommend favourable crops.
+                        Only one step registration and specifying the location will predict the most appropriate crop.
+                        The basic knowledge of the crops till the advance version is now available to justify which will be the
+                         best crop for harvesting with maximum production and yield.
+                       
+                    </p>
+                    
+            <center><h1>How to increase production</h1></center>
+            
+            <center><a href="#" class="ctn">Learn More</a></center>
+            </div>
+        </header>
+
+        <section class="section right">
+            <div class="para">
+            <div class="thumbnail">
+                <img src="{{url_for('static', filename='img/benifit.png')}}" alt="thumbnail" class="thumbnail">
+              </div>
+            <center><p class="sectionTag"><br> Yeild Estimation Benifits </p></center>
+            <div id="home" class="sectionSubTag">
+                <br>
+                <p>&#x2713;Increased speed of decision-making related to harvesting, storing, and transporting operations.</p>
+                <p>&#x2713;Data on crop profitability in your area of interest based on yield estimation.</p>      
+                <p>&#x2713;Improved understanding of harvesting with predifened dataset which gives maximum accuracy 
+                                and best Recommendation on all the terms</p>
+                            <br><br>
+                        </div>
+             </div>      
+        </section>
+        <section class="ab">
+            
+            <div class="about">
+                <img src="{{url_for('static', filename='img/a.jpg')}}" alt="about" class="abo">
+                <div id="about"class="abb">
+                    <center><h3>About Us</h3></center>
+                    <p>
+                        The machine learning model is helping the farmers to choose the right crop for
+                        maximum yield.This is based on the regression and classification model with varied range
+                        of dataset.It has been proved as a future support system in the field of agriculture.
+                        Data visualization is helpful in giving brief description of the related terms.
+                        Thus acting as a useful tool.
+            
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="main_footer">
+			<div id="help and Support" class="container">
+				<div class="header text-center">
+					<h2>Contact Us</h2>
+					<p>For any queries contact the working team department</p>
+				</div>
+				<div class="d-flex">
+					<div class="footer_item">
+						<i class="fa fa-mobile" aria-hidden="true"></i>
+						<p><span>Call Us On</span><br />+91 97190393</p>
+					</div>
+					<div class="footer_item">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<p><span>Email Us At</span><br />supportcell@gmail.com</p>
+					</div>
+					<div class="footer_item">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<p><span>Visit Office</span><br />Delhi sector-24 Industrial Area, buliding-234.</p>
+					</div>
+				</div>
+				<div class="form_area">
+					<form action="#" method="#">
+						<div class="d-flex">
+							<input class="space" type="text" name="Name" placeholder="Your Name*">
+							<input class="space" type="Email" name="Email" placeholder="Your Email*">
+						</div>
+						<input type="text" name="Subject" placeholder="Your Subject..*">
+						<textarea placeholder="Your Meassage*"></textarea>
+						<input type="submit" value="Sent Meassage">
+					</form>
+				</div>
+			</div>
+		</section>
+		<!--================================== Contact Section End ====================================-->
+		<!--================================== footer Section Start ====================================-->
+		<section class="last_footer">
+			<div class="container">
+				<div class="footer_All">
+					<ul>
+						<li>
+							<a href="https://facebook.com" target="_blank">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com" target="_blank">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://pinterest.com" target="_blank">
+								<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://linkedin.com" target="_blank">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+					<p>2023 ©. Design by Aditi.</p>
+				</div>
+			</div>
+		</section>
+		<!--================================== footer Section End ====================================-->
+		</body>    
+       </html>
+       </div>
+    </body>
+</html>

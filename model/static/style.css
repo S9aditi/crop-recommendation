@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Alkatra');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100vw;
+    height: 80vw;
+    background-image: url('img/bbb.jpeg');
+    background-position: bottom;
+    background-size:110%;
+    display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   background height: 100px;
+}
+.header-content{
+    
+    color:rgb(247, 243, 241);
+}
+h2{
+   
+    font-size: 7vmin;
+    color:rgb(3, 42, 57);
+    text-align: center;
+    padding: 100px,0;
+}
+.text-big{
+    color: #5c3604;
+    font: bold;
+    font-style:oblique;
+    font-size: 7vmin;
+    margin-top: 15vb;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.text-small{
+    margin-bottom: 430px;
+    margin-right: 150px;
+    font-size: 26px;
+    height: 75%;
+    color:rgb(63 62 55);
+    font-style: oblique;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.header-content h1{
+    font-size: 9vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display:inline-block;
+    text-align: center;
+    
+}
+.navbar{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: #0f0f0f;
+    
+    background-color: #d6e6f1;
+}
+.nav-links li{
+    margin: 0 30px;
+    padding: 15px;
+}
+.nav-links li a{
+   text-decoration: none;
+   color:rgb(4, 3, 3);
+   
+}
+.nav-links li a:hover{
+    text-decoration: none;
+    color:rgb(245, 139, 8);
+    
+ }
+ .ctn{
+    padding-top: 20px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background:#298d58;
+    
+    color:rgb(252, 252, 254);
+    justify-content: center;
+    text-align: center;
+} 
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.active{
+    color: #f1e8e8;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.logo img{
+    width: 20%;
+    display: flex;
+    border: 5px solid rgb(8, 34, 2);
+    border-radius: 50px;
+    margin-left: 60PX;
+    }
+.logo{
+    width: 50%;
+}    
+.section right{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: #f5f0f0;
+    background-color: #f5f9f5;
+}
+
+.thumbnail{
+    width: 600px;
+    box-shadow: #5c0909;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 30px,0;
+    display: flex;
+    
+}
+.sectionTag{
+    
+    color: rgb(1, 37, 28);
+    background-color:  #f2f6f0;
+    font-size: 60px;
+    padding: 30px;
+   font-style: bold;
+}
+.sectionSubTag{
+text-align: left;
+font-style:bold;
+color: rgb(5, 70, 37);
+background-color:  #f2f6f0;
+display: block;
+padding: 100px ,0;
+font-size: 30px;
+line-height: 1.5;
+}
+.ab{
+background-color: rgb(116 145 14)
+color: #830a5c;
+font-size: 30px;
+font: bold;
+padding: 100px 0;
+font-style: italic;
+border width:20px ;
+border color:black;
+}
+.abo{
+    float: left;
+    width: 40vw;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+}
+.abo img{
+    width: 20%;
+    display: flex;
+    border: 5px solid rgb(8, 34, 2);
+    border-radius: 50px;
+}
+.about h3{
+   color: #8e0256;
+   padding: 30px;
+   font-size: 50px;
+}
+.line{
+    width: 150px;
+    height: 6px;
+    background:#fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+/*===================================== Contact us Section Start =====================================*/
+section.main_footer {
+    padding: 100px 0;
+    background-color:rgb(219 212 177);
+}
+p{
+    font-size: 40px;
+    text-align: center;
+    padding: 4px;
+}
+.footer_item {
+    width: 33%;
+    text-align: center;
+}
+.footer_item i {
+    font-size: 40px;
+    color: #d58896;
+    margin-bottom: 15px;
+}
+.footer_item p {
+    font-size: 28px;
+}
+.footer_item p span {
+    color: #ae3939;
+    font-weight: bold;
+}
+.form_area {
+    padding: 50px 0;
+}
+input.space {
+    width: 49%;
+}
+form input, textarea {
+    width: 100%;
+    padding: 20px 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    max-width: 18%;
+    text-align: center;
+    position: absolute;
+    right: 159px;
+    margin-top: 100px;
+    background: #D8576F;
+    border: navajowhite;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*===================================== Contact us Section End =====================================*/
+/*===================================== Footer Section Start =====================================*/
+.footer_All ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer_All {
+    text-align: center;
+}
+.footer_All ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.footer_All ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #585D63;
+    color: #fff;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+section.last_footer {background: #242424;padding: 80px 0;}
+.footer_All p {
+    color: #6C757D;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/*===================================== Footer Section End =====================================*/
+
+
